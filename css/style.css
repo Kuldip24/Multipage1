@@ -146,6 +146,9 @@ nav
         transition: all linear .3s;
     }
 }
+.main_menu li a.active{
+    color: var(--theme-color);
+}
 nav
 {
     padding-top: 28px;
@@ -190,24 +193,24 @@ nav
 /* --------------------------------- banner section start ---------------------------------*/
 .slider1_bg_image1
 {
-    background-image: url(../assets/asset\ 30.jpeg);
+    background: url(../assets/asset\ 30.jpeg) left top no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: left top; */
+    /* background-repeat: no-repeat; */
 }
 .slider1_bg_image2
 {
-    background-image: url(../assets/asset\ 31.jpeg);
+    background: url(../assets/asset\ 31.jpeg) left top no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: left top; */
+    /* background-repeat: no-repeat; */
 }
 .slider1_bg_image3
 {
-    background-image: url(../assets/asset\ 32.jpeg);
+    background: url(../assets/asset\ 32.jpeg) left top no-repeat;
     background-size: cover;
-    background-position:  center;
-    background-repeat: no-repeat;
+    /* background-position:  left top; */
+    /* background-repeat: no-repeat; */
 }
 .slider::before {
     position: absolute;
@@ -597,7 +600,7 @@ nav
 }
 .button-group button
 {
-    margin-right: 25px;
+    margin-right: 20px;
     color: #444444;
     font-weight: 600;
     border: 0;
@@ -611,6 +614,11 @@ nav
         background-color: var(--theme-color);
         color: white;
     }
+}
+.button-group button.active
+{
+    background-color: var(--theme-color);
+    color: white;
 }
 .iso_box
 {

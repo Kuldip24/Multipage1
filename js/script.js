@@ -31,6 +31,19 @@
       
       // Mobile menu end------------------
 
+      // add active class in navbar----- 
+      $('.main_menu > li a').click(function(){
+        $('.main_menu > li a').removeClass('active');
+        $(this).addClass('active');
+      });
+
+      // add active class in isotope----- 
+      $('.button-group > button').click(function(){
+        $('.button-group > button').removeClass('active');
+        $(this).addClass('active');
+      });
+      
+
   // banner section start (owl-carousel) #slider1--------
   $('.slickslider1').slick({
     slidesToShow: 1,
@@ -211,4 +224,7 @@ jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
   }
 })
 
+
+
 });
+
